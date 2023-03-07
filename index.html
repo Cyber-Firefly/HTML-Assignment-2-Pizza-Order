@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1">
+        <title>Let's Order a Pizza</title>
+        <meta name="description" content="Assignment 2">
+        <meta name="robots" content="nofollow noindex">
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="index.html"><img src="./img/pizza-logo.png" alt="header logo"></a>
+            </div>
+            <nav>
+                <menu>
+                    <li><a href="#contact-us">CONTACT US</a></li>
+                    <li><a href="#">HOME</a></li>
+                </menu>
+            </nav>
+        </header>
+        <section class="masthead">
+            <div>
+                <h1>Build Your Own Pizza!</h1>
+            </div>
+        </section>
+    <main>
+        <section class="size-crust">
+            <div>
+                <h2>1. Size & Crust</h2> <!--choose size and crust-->
+            </div>
+            <div>
+                <input type="radio" id="small" name="size" value="small">
+                <label for="small">SMALL - 10"</label>
+            </div>
+            <div>
+                <input type="radio" id="medium" name="size" value="medium">
+                <label for="medium">MEDIUM - 12"</label>
+            </div>
+            <div>
+                <input type="radio" id="large" name="size" value="large">
+                <label for="large">LARGE - 14"</label>
+            </div>
+            <div class="divider">
+                <!--this is a line divider-->
+            </div> 
+            <div>
+                <input type="radio" id="crust1" name="crust" value="hand-tossed-thin">
+                <label for="crust1">HAND TOSSED THIN</label>
+            </div>
+            <div>
+                <input type="radio" id="crust2" name="crust" value="original-hand-tossed">
+                <label for="crust2">ORIGINAL HAND TOSSED</label>
+            </div>
+            <div>
+                <input type="radio" id="crust3" name="crust" value="crunchy-thin-crust">
+                <label for="crust3">CRUNCHY THIN CRUST</label>
+            </div>
+        </section>
+        <section class="cheese"> <!--choose cheese amount-->
+            <h2>2. Cheese</h2>
+            <label for="cheese-select">Choose the Quantity:</label>
+            <select name="cheese" id="cheese-select">
+                <option value="extra">Extra</option>
+                <option value="normal" selected>Normal</option>
+                <option value="light">Light</option>
+            </select>
+        </section>
+        <section class="toppings">
+            <h2>3. Toppings</h2> <!--choose toppings-->
+            <fieldset>
+                <legend>Choose your Toppings</legend>
+                <div class="toppings-container">
+                    <div class="toppings-column">
+                        <label><input type="checkbox" name="toppings" value="pepperoni">Pepperoni</label>
+                        <label><input type="checkbox" name="toppings" value="brooklyn-pepperoni">Brooklyn Pepperoni</label>
+                        <label><input type="checkbox" name="toppings" value="sausage">Sausage</label>
+                        <label><input type="checkbox" name="toppings" value="beef-crumble">Beef Crumble</label>
+                    </div>
+                    <div class="toppings-column">
+                        <label><input type="checkbox" name="toppings" value="ham">Ham</label>
+                        <label><input type="checkbox" name="toppings" value="bacon">Bacon</label>
+                        <label><input type="checkbox" name="toppings" value="chicken">Chicken</label>
+                        <label><input type="checkbox" name="toppings" value="steak">Steak</label>
+                    </div>
+                </div>
+            </fieldset>
+        </section>
+        <section class="sauce">
+            <div>
+                <h2>4. Sauce</h2> <!--choose sauce-->
+            </div>
+            <div>
+                <input type="radio" id="pizza-sauce" name="sauce" value="pizza-sauce">
+                <label for="pizza-sauce">Pizza Sauce</label>
+            </div>
+            <div>
+                <input type="radio" id="bbq" name="sauce" value="bbq-sauce">
+                <label for="bbq">BBQ Sauce</label>
+            </div>
+            <div>
+                <input type="radio" id="alfredo" name="sauce" value="alfredo-sauce">
+                <label for="alfredo">Alfredo Sauce</label>
+            </div>
+            <div>
+                <input type="radio" id="marinara" name="sauce" value="marinara-sauce">
+                <label for="marinara">Hearty Marinara Sauce</label>
+            </div>
+            <div>
+                <input type="radio" id="ranch" name="sauce" value="ranch-dressing">
+                <label for="ranch">Ranch Dressing</label>
+            </div>
+            <div>
+                <input type="radio" id="gar-par" name="sauce" value="garlic-parmesan-sauce">
+                <label for="gar-par">Garlic Parmesan Sauce</label>
+            </div>
+        </section>
+        <section class="dipping-sauce">
+            <div>
+                <h2>5. Dipping Sauce</h2>  <!--choose dipping sauce-->
+            </div>
+            <div>
+                <input type="checkbox" id="garlic-sauce" name="dipping-sauce" value="garlic-sauce">
+                <label for="garlic-sauce">Garlic Sauce</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ranch-cup" name="dipping-sauce" value="ranch-cup">
+                <label for="ranch-cup">Ranch Cup</label>
+            </div>
+            <div>
+                <input type="checkbox" id="marinara-cup" name="dipping-sauce" value="marinara-cup">
+                <label for="marinara-cup">Marinara Cup</label>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <article>
+            <img src="./img/pizza-to-order.jpeg" alt="Ready-to-Order">
+            <h2>Your Pizza Order</h2> <!--initially wanted to add a summary of the order, but I realized we need to learn JS first, so it is just a form asking quantity of pizzas and collect user's info to proceed to order-->
+            <div>
+                <form method="post" action="somephpfile.php">
+                    <p><label for="pizza-quantity">How Many Pizzas Do You Want To Order? </label>
+                    <select name="pizza-quantity" id="pizza-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    </p>
+                    <p><input type="text" placeholder="* Your Name" name="full-name" required></p>
+                    <p><input type="email" placeholder="* Your Email" name="email" required></p>
+                    <input type="submit" value="Order">
+                </form>
+            </div>
+        </article>
+    </aside>
+    <footer id="contact-us">
+        <div>
+            <a href="index.html"><img src="./img/pizza-logo.png" alt="footer logo"></a>
+        </div>
+        <div>
+            <h4>Contact Us</h4>
+            <p>Welcome to John Gu's Pizzas. This is an assignment work, not a real pizza-ordering website. Thanks for visiting!</p>
+            <p>Phone Number: 705-xxx-xxxx</p>
+        </div>
+    </footer>
+    </body>
+</html>
