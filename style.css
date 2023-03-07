@@ -1,0 +1,203 @@
+/* Global Styling */
+body{
+    margin:0;
+}
+main{
+    margin:2%;
+}
+h1, li{
+    font-family:'Montserrat Alternates', sans-serif;
+}
+h2{
+    font-family:'Montserrat Alternates', sans-serif;
+    background-color:#f5f5f5;
+}
+/* My divider */
+.divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
+  }
+/* Page Styling */
+body{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header"
+    "masthead masthead"
+    "main sidebar"
+    "footer footer";
+}
+header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    height:100px;
+    background-color: #0e0e0e	;
+}
+header div{
+    flex-grow: 1;
+    height:80%;
+}
+header div img{
+    height: 100%;
+    width: auto;
+}
+header nav menu{
+    display: flex;
+    list-style: none;
+}
+header nav menu li{
+    padding: 0 10px;
+}
+header nav menu li a{
+    color:#f4f4f4;
+}
+
+.masthead{
+    grid-area:masthead;
+    height:50vh;
+    background-image: url("../img/pizza-prepare.jpeg");
+    background-size: cover;
+}
+.masthead h1{
+    color: #f4f4f4;
+    display: flex;
+    font-size:4em;
+    justify-content: center;
+}
+main{
+    grid-area: main;
+}
+.size-crust{
+    padding:2% 2%;
+    background-color:#e6e6fa;
+    color: #0e0e0e;
+    display:grid;
+}
+.cheese{
+    padding:2% 2%;
+    background-color:#e6e6fa;
+    color: #0e0e0e;
+    display:grid;
+}
+.toppings{
+    padding:2% 2%;
+    background-color:#e6e6fa;
+    color: #0e0e0e;
+    display:grid;
+}
+.sauce{
+    padding:2% 2%;
+    background-color:#e6e6fa;
+    color: #0e0e0e;
+    display:grid;
+}
+.dipping-sauce{
+    padding:2% 2%;
+    background-color:#e6e6fa;
+    color: #0e0e0e;
+    display:grid;
+}
+.size-crust :nth-child(2),
+.size-crust :nth-child(3),
+.size-crust :nth-child(4),
+.size-crust :nth-child(6),
+.size-crust :nth-child(7),
+.size-crust :nth-child(8){
+    padding:10px;
+}
+
+.cheese label{
+    padding:5px;
+    min-height: 2em;
+    font-size: 20px;
+}
+.cheese select{
+    width:33%;
+    height: 100%;
+    font-size:17px ;
+}
+.toppings fieldset legend{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom:5px;
+}
+.toppings fieldset{
+    border:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.toppings-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:10px;
+}
+.toppings-column{
+    display: flex;
+    flex-direction: column;
+}
+.toppings-column label{
+   padding:5px;
+   margin-right: 100px;
+}
+.sauce div{
+    padding:5px;
+}
+.dipping-sauce div{
+    padding:5px;
+}
+aside{
+    grid-area:sidebar;
+    display: grid;
+    background-color: #e6e6fa;
+}
+aside article{
+    padding:10px;
+}
+aside article img{
+    width: 100%;
+    height:auto;
+}
+aside article div form{
+    width: auto;
+    height:auto;
+    padding:10px;
+}
+aside article div label{
+    font-size: 20px;
+    color:#0e0e0e
+}
+aside article div select{
+    padding-left:1%;
+}
+aside article div form input{
+    width:100%;
+    font-size: 20px;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0e0e0e;
+    height: 100px;
+}
+footer div{
+    padding: 10px;
+    flex-grow: 1;
+    height:80%;
+}
+footer h4,p{
+    color: #f5f5f5;
+}
+
+footer div img{
+    height:100%;
+    width:auto;
+}
